@@ -153,7 +153,7 @@ module stackable_wire_holder_v2()
         for (i = [0:len(spool_widths) - 1])
         {
             translate([
-                offsets[i] + i * (wall_thickness + 2 * spool_tolerance) - spool_widths[0],
+                offsets[i] + i * (wall_thickness + 2 * spool_tolerance) - spool_widths[i],
                 0,
                 0,
             ])
